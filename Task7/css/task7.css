@@ -1,0 +1,594 @@
+
+body {
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	font-size: 15px;
+	color: rgb(120, 120, 120);
+	text-align: center;
+	text-decoration: none;	
+}
+
+/* header */
+
+#header {
+	width: 100%;
+	min-width: 1280px;
+	overflow: hidden;
+}
+
+#header img, h2 {
+	margin-top: 15px;
+	float: left;
+}
+
+#header img {
+	margin-left: 60px;
+	margin-right: 15px;
+}
+
+#header h2 {
+	margin-top: 20px;
+	font-size: 21px;
+}
+
+#header ul {
+	margin-top: 0px;
+	margin-right: 40px;
+}
+
+#header .nav li{
+	float: right;
+}
+
+#header .nav li a {
+	display: block;
+	padding: 20px;
+}
+
+#header .nav li a:hover {
+	color: black;
+}
+
+#header .home {
+	border-bottom: 5px solid rgb(227, 71, 75);
+}
+
+#header .login {
+	color: rgb(227, 71, 75);
+}
+
+/* main */
+#main {
+	width: 100%;
+	min-width: 1280px;
+}
+
+/* start */
+
+#start {
+	margin-top: -36px;
+	height: 690px;
+	background-image: url(../images/newlife.png);
+	background-size: cover;
+}
+
+#start {
+	color: white;
+}
+
+#start h1 {
+	font-size: 50px;
+	padding-top: 200px;
+	padding-left: 100px;
+}
+
+#start p {
+	width: 280px;
+	font-size: 20px;
+	padding-left: 100px;
+}
+
+#start a {
+	width: 300px;
+	display: block;
+	margin-top: 60px;
+	margin-left: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 30px;
+	color: white;
+	background-color: rgb(227, 71, 75);
+}
+
+#start a:hover {
+	color: rgb(227, 71, 75);
+	background-color: white;
+}
+
+/* introduce */
+
+#introduce {
+	overflow: hidden;
+}
+
+#introduce li {
+	width: 25%;
+	float: left;
+}
+
+#introduce img {
+	display: block;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#introduce p {
+	height: 45px;
+	text-align: center;
+	font-size: 13px;
+	color: rgb(120, 120, 120);
+	margin-top: 45px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+#introduce li .right {
+	border-right: 1px solid rgb(120, 120, 120);
+}
+
+#introduce .first_li {
+	margin-left: -20px;
+}
+
+/* question */
+
+#question {
+	margin-top: 45px;
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	background-color: #EBEBEB;
+}
+
+#question img {
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+}
+
+#question p {
+	padding-top: 70px;
+	color: #959595;
+	font-size: 45px;
+	text-align: center;
+}
+
+
+/* search */
+
+#search {
+	margin-top: -20px;
+	height: 341px;
+	background-image: url(../images/map.png);
+	background-size: cover;
+	text-align: center;
+}
+
+#search p {
+	color: white;
+}
+
+#search .search_title p {
+	font-size: 20px;
+	padding-top: 45px;
+}
+
+#search .search_title .bottom_title {
+	font-size: 30px;
+	margin-top: -30px;
+	padding-top: 0;
+}
+
+#search .small_title {
+	font-size: 10px;
+	margin-top: -30px;
+}
+
+#search form ul {
+	width: 1030px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#search form ul li {
+	float: left;
+	margin-left: 30px;
+}
+#search form select, button {
+	font-family: "微软雅黑";
+	color: #959595;
+	height: 35px;
+	width: 234px;
+}
+
+#search form ul .first_select {
+	margin-left: -20px;
+}
+
+#search form ul li button {
+	border: none;
+	font-size: 14px;
+	background-color: rgb(182,71,69);
+	color: white;
+}
+
+/* photo_wall */
+
+#photo_wall {
+	height: 605px;
+	background-color: rgb(246, 246, 246);
+	position: relative;
+}
+
+#photo_wall .photo {
+	top: 100px;
+	position: absolute;
+}
+
+#photo_wall .photo_1 {
+	left: 11%;
+}
+
+#photo_wall .photo_2 {
+	left: 31.5%;
+}
+
+#photo_wall .photo_3 {
+	left: 52%;
+}
+
+#photo_wall .photo_4 {
+	left: 72.5%;
+}
+
+#photo_wall .photo p {
+	font-size: 15px;
+	text-align: center;
+}
+
+#photo_wall .photo .little {
+	margin-top: -10px;
+	font-size: 10px;
+	color: gray;
+}
+
+#photo_wall .photo img {
+	padding: 15px 10px;
+	border: 2px solid #EBEBEB;
+}
+
+/* two_columns */
+
+#two_columns {
+	height: 567px;
+	overflow: hidden;
+}
+
+#two_columns .left {
+	width: 66%;
+	height: 567px;
+	background-image: url('../images/newworld.png');
+	background-size: cover;
+	float: left;
+	text-align: center;
+	color: white;
+}
+
+#two_columns .left .second_biggest {
+	font-size: 50px;
+	margin-top: 120px;
+}
+
+#two_columns .left .biggest {
+	font-size: 150px;
+	margin-top: -80px;
+}
+
+#two_columns .left .third_biggest {
+	font-size: 22px;
+	margin-top: -160px;
+}
+
+#two_columns .left .smallest {
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+#two_columns .right {
+	width: 33%;
+	height: 567px;
+	float: left;
+	text-align: center;
+}
+
+#two_columns .right .right_son {
+	font-size: 20px;
+	margin: 140px 67px;
+}
+
+#two_columns .right .right_son .new_world {
+	display: inline-block;
+}
+
+#two_columns .right .right_son .zero_one {
+	color: rgb(227, 71, 75);
+	display: inline-block;
+}
+
+#two_columns .right .right_son .text_int {
+	font-size: 10px;
+	line-height: 30px;;
+	color: darkgray;
+}
+
+#two_columns .right .right_son a {
+	display: inline-block;
+	width: 105px;
+	height: 35px;
+	margin-top: 30px;
+	color: rgb(227, 71, 75);
+	font-size: 15px;
+	line-height: 35px;
+	border: 1px solid rgb(227, 71, 75);
+}
+
+#two_columns .right .right_son a:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: rgb(227, 71, 75);
+}
+
+
+/* three_columns */
+
+#three_columns {
+	overflow: hidden;
+}
+
+#three_columns .same {
+	width: 33%;
+	height: 521px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 10px;;
+	float: left;
+}
+
+#three_columns .first_p {
+	margin-top: 170px;
+}
+
+#three_columns .same .one {
+	font-size: 30px;
+}
+
+#three_columns .left {
+	color: white;
+	background-color: rgb(227, 71, 75);
+}
+
+#three_columns a {
+	display: inline-block;
+	width: 170px;
+	height: 45px;
+	font-size: 20px;	
+	line-height: 45px;
+}
+
+#three_columns .left a {
+	color: white;
+	border: 1px solid white;
+	background-color: rgb(227, 71, 75);	
+}
+
+#three_columns .left a:hover {
+	color: rgb(227, 71, 75);
+	border: 1px solid rgb(227, 71, 75);
+	background-color: white;
+}
+
+#three_columns .middle a {
+	color: rgb(227, 71, 75);
+	border: 1px solid rgb(227, 71, 75);
+}
+
+#three_columns .middle a:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: rgb(227, 71, 75);	
+}
+
+#three_columns .right {
+	float: left;
+	width: 34%;
+	height: 521px;
+	background-image: url('../images/lovelife.png');
+	background-size: cover;
+}
+
+/* application */
+
+#application {
+	height: 750px;
+}
+
+#application .title {
+	height: 180px;
+	padding-top: 120px;
+}
+
+#application .title p {
+	text-align: center;
+}
+
+#application .title .p1 {
+	font-size: 20px;
+}
+
+#application .title .p2 {
+	margin-top: -30px;
+	font-size: 30px;
+	color: rgb(227, 71, 75);
+}
+
+#application .title .p3 {
+	width: 420px;
+	margin: 0 auto;
+	margin-top: -35px;
+	font-size: 12px;
+	color: darkgray;
+}
+
+#application .content {
+	height: 450px;
+}
+
+#application .son_content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#application .content .son_content .left {
+	float: left;
+	width: 300px;
+	height: 300px;
+}
+
+#application .content .son_content .left .p1 {
+	font-size: 15px;
+}
+
+#application .content .son_content .left .p2 {
+	line-height: 25px;
+	font-size: 12px;
+	color: darkgray;
+	padding-bottom: 20px;
+}
+
+#application .content .son_content .right {
+	margin-left: 380px;
+	width: 640px;
+	height: 300px;
+}
+
+#application .content .son_content .right form input {
+	margin-top: 15px;
+	background-color: rgb(235, 235, 235);
+	border: none;
+	width: 300px;
+	height: 40px;
+}
+
+#application .content .son_content .right form .text {
+	margin-top: 20px;
+	color: black;
+	background-color: rgb(235, 235, 235);
+	border: none;
+	width: 610px;
+	height: 120px;
+}
+
+#application .content .son_content .right form .right_text {
+	margin-left: 10px;
+}
+
+#application .content .son_content .right form .submit {
+	width: 615px;
+}
+
+/* contact */
+
+#contact {
+	color: white;
+	text-align: center;
+	height: 360px;
+	background-color: rgb(48, 51, 58);
+}
+
+#contact .son_contact {
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 475px;
+}
+
+#contact .title .p1 {
+	font-size: 20px;
+}
+
+#contact .title .p2 {
+	line-height: 20px;
+	letter-spacing: 1px;
+	font-size: 10px;
+}
+
+#contact .son_contact_ {
+	margin: 0 auto;
+	width: 510px;
+}
+
+#contact input {
+	margin-top: 15px;
+	font-size: 15px;
+	float: left;
+	width: 430px;
+	height: 38px;
+	border: none;
+}
+
+#contact .submit {
+	font-family: "微软雅黑";
+	letter-spacing: 5px;;
+	color: white;
+	background-color: rgb(102, 104, 110);
+	width: 80px;
+	height: 40px;
+}
+
+#contact .son_contact_ img {
+	margin-top: 30px;
+	margin-right: 25px;
+}
+
+/* footer */
+
+#footer {
+	font-size: 10px;
+	color: white;
+	height: 60px;
+	background-color: rgb(45, 45, 53);
+}
+
+#footer span {
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 20px;;
+}
+
+#footer a {
+	float: right;
+	margin-top: 20px;;
+	margin-right: 40px; 
+	font-size: 10px;
+	color: white;
+}
