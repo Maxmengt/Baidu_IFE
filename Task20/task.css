@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#div-input {
+	position: relative;
+	min-width: 600px;
+}
+
+#div-input textarea {
+	resize: none;
+	width: 500px;
+	height: 200px;
+}
+
+#div-input .button {
+	position: absolute;
+	background-color: #fff;
+}
+
+#div-input .input {
+	left: 520px;
+	top: 186px;	
+}
+
+#div-input input {
+	display: block;
+	margin-top: 10px;
+	width: 502px;
+}
+
+#div-input .search {
+	left: 520px;
+	top: 219px;
+}
+
+#ul-list li {
+	list-style: none;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 5px 10px;
+	background-color: lightgray;
+}
+
+#ul-list span {
+	color: red;
+}

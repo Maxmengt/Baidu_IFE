@@ -1,0 +1,47 @@
+@keyframes left-to-right {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(25px) }
+}
+/* Firefox */
+@-moz-keyframes left-to-right {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(25px) }
+}
+/* Safari */
+@-webkit-keyframes left-to-right {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(25px) }
+}
+@keyframes right-to-left {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(-25px) }
+}
+/* Firefox */
+@-moz-keyframes right-to-left {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(-25px) }
+}
+/* Safari */
+@-webkit-keyframes right-to-left {
+	from{ transform: translateX(0) }
+	to{ transform: translateX(-25px) }
+}
+button {
+	background-color: #fff;
+}
+#ul-list {
+	padding-left: 0px;
+}
+#ul-list li {
+	float: left;
+	list-style: none;
+	width: 20px;
+	margin-left: 5px;
+	background-color: red;
+}
+#ul-list li p {
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 4px;
+	font-size: 10px;
+}
