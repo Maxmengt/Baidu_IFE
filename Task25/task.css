@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+	color: #000;
+	/*background-image: url("background.jpg");*/
+	/*background-size: cover;*/
+}
+
+li {
+	list-style: none;
+}
+
+#header {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 800px;
+	margin: 30px auto;
+	font-size: 20px;
+}
+
+.label {
+	height: 48px;
+	line-height: 48px;
+}
+
+#search-input {
+	font-size: 20px;
+	border: 2px solid #b38e95;
+}
+
+#search-input:focus {
+	border: 2px solid #9ea7bb;
+}
+
+#search-btn {
+	width: 100px;
+	outline: none;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	padding: 10px;
+	color: #f00;
+	background-color: #fff;
+	border: 2px solid #f00;
+	border-radius: 15%;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+#search-btn:hover {
+	color: #fff;
+	background-color: #f00;
+	border: 2px solid #fff;
+}
+
+#box-wrap {
+	width: 1280px;
+	margin: 0 auto;
+	transform: translateX(20%);
+}
+
+.ul-list {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;	
+}
+
+.list {
+	position: relative;
+}
+
+.div-list {
+	width: 300px;
+}
+
+.absolute-pos {
+	cursor: pointer;
+	position: absolute;
+}
+
+.in-icon {
+	top: 16px;
+	left: 6px;
+	border-width: 8px 11px;
+	border-style: solid;
+	border-color: transparent transparent transparent #9c9c9c;	
+}
+
+.out-icon {
+	top: 20px;
+	left: 6px;
+	border-width: 11px 8px;
+	border-style: solid;
+	border-color: #9c9c9c transparent transparent transparent;
+}
+
+.add-list, .delete-list {
+	display: none;
+}
+
+.add-list:hover, .delete-list:hover {
+	cursor: pointer;
+}
+
+.div-list:hover>.add-list, .div-list:hover>.delete-list {
+	display: inline;
+}
+
+.li-text {
+	display: inline-block;
+	margin-top: 5px;
+	padding-left: 25px;
+	height: 35px;
+	line-height: 35px;
+	width: 200px;
+	border: 2px solid #b38e95;
+	border-radius: 10%;
+	color: #8b8378;
+	background-color: #fff;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+.li-text:hover {
+	cursor: pointer;
+	font-weight: bold;
+	color: #000;
+	background-color: #d3d3d3;
+}
+
+.show {
+	color: #000;
+	background-color: #d3d3d3;
+}
