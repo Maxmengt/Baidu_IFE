@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>IFE JavaScript Task 31</title>
+        <link rel="stylesheet" href="task.css" />
+	</head>
+	<body>
+	    <div class="box-wrap">
+    	    <input id="student" type="radio" name="identity" checked="checked" />
+    	    <label class="radio-label" for="student">在校生</label>
+    	    <input id="no-student" name="identity" type="radio" />
+    	    <label class="radio-label" for="no-student">非在校生</label>
+    	    <div class="box-wrap-2">
+        	    <label class="option-label show">学校</label>
+        	    <select class="option-city show">
+    	           <option id="option-Beijing" value="Beijing">北京</option>
+        	       <option id="option-Shanghai" value="Shanghai">上海</option>
+        	       <option id="option-Guangzhou" vaule="Guangzhou">广州</option>
+        	    </select>
+        	    <select id="Beijing" class="option-university show">
+        	       <option class="Beijing" value="THU">清华大学</option>
+                   <option class="Beijing" value="PKU">北京大学</option>
+                   <option class="Beijing" vaule="BHU">北京航空航天大学</option>
+        	    </select>
+        	    <select id="Shanghai" class="option-university">
+                   <option class="Shanghai" value="SJTU">上海交通大学</option>
+                   <option class="Shanghai" value="FDU">复旦大学</option>
+                   <option class="Shanghai" vaule="TJU">同济大学</option>    	        
+        	    </select>
+        	    <select id="Guangzhou" class="option-university">
+                   <option class="Guangzhou" value="SYSU">中山大学</option>
+                   <option class="Guangzhou" value="SCUT">华南理工大学</option>
+                   <option class="Guangzhou" vaule="GDUT">广东工业大学</option>    	        
+        	    </select>
+        	    <label class="text-label input-company" for="company">就业单位</label>
+    	        <input id="company" class="input-company" name="company" type="text" />
+    	    </div>
+	    </div>
+	    <script src="task.js"></script>
+	</body>
+</html>
