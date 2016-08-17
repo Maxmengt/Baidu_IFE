@@ -23,7 +23,7 @@ function clsStimulusSys(spacecraft, speed, expend) {
 				spacecraft.selfElement.style.left = spacecraft.circle.x - spacecraft.circle.radius * Math.cos(spacecraft.circle.angle * Math.PI / 180) + "px";
 				spacecraft.selfElement.style.top = spacecraft.circle.y - spacecraft.circle.radius * Math.sin(spacecraft.circle.angle * Math.PI / 180) + "px";
 				spacecraft.selfElement.style.transform = "rotate(" + spacecraft.circle.angle + "deg)";
-				spacecraft.power -= expend / 100;
+				spacecraft.power -= expend / (1000 / delay);
 				spacecraft.circle.angle += speed;
 				if( spacecraft.circle.angle >= 360 ) spacecraft.circle.angle = 0;
 			}, delay);
@@ -33,7 +33,9 @@ function clsStimulusSys(spacecraft, speed, expend) {
 			spacecraft.flying = false;
 			if( this.timer ) clearInterval(this.timer);
 			spacecraft.selfElement.src = "spacecraft.png";
-			spacecraft.selfElement.className = spacecraft.selfElement.className.replace(/ fired-spacecraft/g, "");
+			spacecraft.selfElement.style.left = spacecraft.selfElement.offsetLeft + 5 + "px";
+			spacecraft.selfElement.style.top = spacecraft.selfElement.offsetTop + 5 + "px";
+			spacecraft.selfElement.className = spacecraft.selfElement.className.replace(/ fired-spacecraft/, "");
 		};
 	}
 }
@@ -113,8 +115,8 @@ function clsMessage(id, command) {
 (function() {
 	var singleMediator = (function() {
 		return {
-			lossRate: 0.3,
-			delay: 1000,
+			lossRate: 0,
+			delay: 0,
 			send: function(message, tracks, target) {
 				if( Math.random() <= this.lossRate ) {
 					target.disabled = false;
