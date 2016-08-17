@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>IFE JavaScript Task 32</title>
+		<link rel="stylesheet" href="task.css" />
+	</head>
+	<body>
+		<div class="box-wrap">
+			<form class="form-factory">
+				<fieldset>
+					<legend>表单工厂</legend>
+					<div>
+						<label for="label-name">标签名称:</label>
+						<input id="label-name" type="text" autofocus />
+					</div>
+					<div>
+						<label for="label-type">标签类型:</label>
+						<select id="label-type">
+							<option selected>文本</option>
+							<option>邮箱</option>
+							<option>密码</option>
+							<option>手机</option>
+							<option>按钮</option>
+						</select>
+					</div>
+					<div class="radio">
+						<label>是否必填:</label>
+						<label class="label-select" for="label-yes">是</label>
+						<input id="label-yes" type="radio" name="required" value="yes" checked />
+						<label class="label-select" for="label-no">否</label>
+						<input id="label-no" type="radio" name="required" value="no" />
+					</div>
+					<div>
+						<button class="button" type="button">Add</button>
+					</div>
+				</fieldset>
+			</form>
+			<form class="form-produce">
+				<fieldset>
+					<legend>表单生成</legend>
+				</fieldset>
+			</form>
+		</div>
+		<script src="task.js"></script>
+	</body>
+</html>

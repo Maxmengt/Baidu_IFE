@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: "microsoft yahei";
+}
+
+.box-wrap {
+	overflow: hidden;
+	padding: 20px;
+}
+
+form div {
+	padding: 5px;
+}
+
+.form-factory {
+	width: 400px;
+	float: left;
+}
+
+#label-name, #label-type {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		box-sizing: border-box;
+	margin-left: 15px;
+	font-size: 20px;
+	width: 220px;
+}
+
+.label-select {
+	cursor: pointer;
+	margin-left: 50px;
+}
+
+.button {
+	outline: none;
+	margin-top: 10px;
+	margin-left: 260px;
+	width: 80px;
+	height: 34px;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #2e70b0;
+	border: 2px solid #2e70b0;
+	border-radius: 8px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;	
+}
+
+.button:hover {
+	background-color: #1c86ee;
+	cursor: pointer;
+}
+
+.form-produce {
+	margin-left: 420px;
+}
+
+.show-block {
+	display: block;
+}
+
+.show-inline {
+	display: inline;
+}
+
+.hide {
+	display: none;
+}
