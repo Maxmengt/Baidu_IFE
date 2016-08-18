@@ -122,6 +122,7 @@ function clsMessage(id, command) {
 					target.disabled = false;
 					return ;
 				}
+				message = JSON.parse(message);
 				setTimeout(function() {
 					if( message.command == "ready" ) {
 						tracks[message.id - 1] = new clsSpaceCraft(message.id);
@@ -154,6 +155,7 @@ function clsMessage(id, command) {
 		event = EventUtil.getEvent(event);
 		var target = EventUtil.getTarget(event),
 			num = parseInt(target.parentNode.className.slice(-1)),
+			command,
 			message;
 		switch( target.name ) {
 			case "ready-button":
@@ -164,14 +166,16 @@ function clsMessage(id, command) {
 					alert("最多只能创建4架宇宙飞船！");
 					return ;
 				}
-				message = new clsMessage(i + 1, "ready");
+				command = "ready";
+				num = i + 1;
 				break;
-			case "start-button": message = new clsMessage(num, "start"); break;
-			case "stop-button": message = new clsMessage(num, "stop"); break;
-			case "destroy-button": message = new clsMessage(num, "destroy"); break;
+			case "start-button": command = "start"; break;
+			case "stop-button": command = "stop"; break;
+			case "destroy-button": command = "destroy"; break;
 			default: return;
 		}
 		target.disabled = true;
+		message = JSON.stringify(new clsMessage(num, command));
 		singleMediator.send(message, tracks, target);
 	}
 	EventUtil.addHandler(controlDiv, "click", buttonHandler);
