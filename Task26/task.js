@@ -23,7 +23,7 @@ function clsStimulusSys(spacecraft, speed, expend) {
 				spacecraft.selfElement.style.left = spacecraft.circle.x - spacecraft.circle.radius * Math.cos(spacecraft.circle.angle * Math.PI / 180) + "px";
 				spacecraft.selfElement.style.top = spacecraft.circle.y - spacecraft.circle.radius * Math.sin(spacecraft.circle.angle * Math.PI / 180) + "px";
 				spacecraft.selfElement.style.transform = "rotate(" + spacecraft.circle.angle + "deg)";
-				spacecraft.power -= expend / (1000 / delay);
+				spacecraft.power -= expend * delay / 1000;
 				spacecraft.circle.angle += speed;
 				if( spacecraft.circle.angle >= 360 ) spacecraft.circle.angle = 0;
 			}, delay);
@@ -48,7 +48,7 @@ function clsEnergySys(spacecraft, speed) {
 				delay = 100,
 				timer;
 			timer = setInterval(function() {
-				spacecraft.power += speed / 10;
+				spacecraft.power += speed * delay / 1000;
 				if( spacecraft.power > 100 ) spacecraft.power = 100;
 			}, delay);
 		}
@@ -115,8 +115,8 @@ function clsMessage(id, command) {
 (function() {
 	var singleMediator = (function() {
 		return {
-			lossRate: 0,
-			delay: 0,
+			lossRate: 0.3,
+			delay: 1000,
 			send: function(message, tracks, target) {
 				if( Math.random() <= this.lossRate ) {
 					target.disabled = false;
