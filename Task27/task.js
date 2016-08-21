@@ -190,7 +190,6 @@ function clsMessage(id, command) {
 				return newMessage;
 			},
 			send: function(message, tracks, target) {
-				console.log("Try again!");
 				if( Math.random() <= this.lossRate ) {
 					this.send(message, tracks, target);
 					return ;
@@ -208,7 +207,6 @@ function clsMessage(id, command) {
 						id = 3 - id;
 						commandSys.removeChild(target.parentNode);
 						tracks[id] = null;
-						console.log(tracks);
 					}
 					target.disabled = false;
 				}, this.delay);
