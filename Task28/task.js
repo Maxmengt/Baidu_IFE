@@ -164,40 +164,6 @@ function clsMessage(id, command) {
 
 (function() {
 	var commandSys = $(".command-system"),
-		singleMediator = (function() {
-			return {
-				lossRate: 0.3,
-				delay: 1000,
-				send: function(message, tracks, target) {
-					if( Math.random() <= this.lossRate ) {
-						target.disabled = false;
-						return ;
-					}
-					message = JSON.parse(message);
-					setTimeout(function() {
-						if( message.command == "ready" ) {
-							tracks[message.id - 1] = new clsSpaceCraft(message.id);
-							var div = document.createElement("div");
-							div.className = "track-" + message.id;
-							div.innerHTML = '<label>对' + message.id + '号飞船下达指令：</label><button class="control-button" name="start-button" type="button">开始飞行</button><button class="control-button" name="stop-button" type="button">停止飞行</button><button class="control-button" name="destroy-button" type="button">销毁飞船</button>';
-							commandSys.appendChild(div);
-						}
-						else {
-							for( var i = 0, len = tracks.length; i < len; ++ i ) {
-								if( tracks[i] ) {
-									tracks[i].signalReceptionSys.receive(message, tracks[i]);
-								}
-							}
-							if( message.command == "destroy" ) {
-								commandSys.removeChild(target.parentNode);
-								tracks[message.id - 1] = null;	
-							}
-						}
-						target.disabled = false;
-					}, this.delay);
-				}
-			};
-		})(),
 		singleBus = (function() {
 			return {
 				lossRate: 0.1,
