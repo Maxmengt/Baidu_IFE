@@ -1,0 +1,88 @@
+html, body {
+	height: 100%;
+}
+
+body, h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	outline: none;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+/* header */
+
+header {
+	margin: 0;
+	padding-left: 84px;
+	height: 46px;
+	line-height: 46px;
+}
+
+.header-title {
+	float: left;
+}
+
+.header-subtitle {
+	margin-left: 80px;
+}
+
+/* container-table */
+
+.container-table, .container-operate {
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.container-table {
+	margin-top: 70px;
+	line-height: 56px;
+	border-collapse: collapse;
+}
+
+.container-table tr {
+	text-align: center;
+}
+
+.container-table td {
+	width: 25%;
+}
+
+.container-table button {
+	width: 80px;
+	height: 24px;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+/* container-operate */
+
+.container-operate {
+	margin-top: 10px;
+	height: 30px;
+}
+
+.container-selectall {
+	padding: 3px 0px 0px 1px;
+}
+
+.container-selectall button {
+	width: 66px;
+	height: 24px;
+}
+
+.container-new button {
+	width: 98px;
+	height: 26px;
+}

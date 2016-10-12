@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微型调查问卷平台</title>
+		<script src="../javascript/react/react.min.js"></script>
+		<script src="../javascript/react/react-dom.min.js"></script>
+		<script src="../javascript/react/browser.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+	</head>
+	<body>
+		<header>
+			<h3 class="header-title">问卷管理</h3>
+			<span class="header-subtitle">我的问卷</span>
+		</header>
+		<div class="container">
+			<table class="container-table">
+				<tr>
+					<th>标题</th>
+					<th>时间</th>
+					<th>状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td class="alignLeft">
+						<input type="checkbox" id="checkbox_a1" name="questionnaire" />
+						<label for="checkbox_a1" class="pointer">这是我的第一份问卷</label>
+					</td>
+					<td>2016-04-12 20:46:52</td>
+					<td class="green-font">发布中</td>
+					<td>
+						<button type="button" class="pointer">查看数据</button>
+						<button type="button" class="pointer">查看问卷</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="alignLeft">
+						<input type="checkbox" id="checkbox_a2" name="questionnaire" />
+						<label for="checkbox_a2" class="pointer">这是我的问卷</label>
+					</td>
+					<td>2016-04-10 20:46:52</td>
+					<td>未发布</td>
+					<td>
+						<button type="button" class="pointer">编辑</button>
+						<button type="button" class="pointer">删除</button>
+						<button type="button" class="pointer">查看问卷</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="alignLeft">
+						<input type="checkbox" id="checkbox_a3" name="questionnaire" />
+						<label for="checkbox_a3" class="pointer">这是我的第一份问卷</label>
+					</td>
+					<td>2016-03-12 20:46:52</td>
+					<td>已发布</td>
+					<td>
+						<button type="button" class="pointer">查看数据</button>
+						<button type="button" class="pointer">查看问卷</button>
+					</td>
+				</tr>
+			</table>
+			<div class="container-operate">
+				<div class="container-selectall floatLeft">
+					<input type="checkbox" id="selectAll" name="questionaire" />
+					<label for="selectAll" class="pointer">全选</label>
+					<button type="button" class="pointer">删除</button>
+				</div>
+				<div class="container-new floatRight">
+					<button type="button" class="pointer">十 新建问卷</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
