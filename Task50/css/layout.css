@@ -64,6 +64,11 @@ header {
 
 .alignLeft {
 	text-align: left;
+	padding-left: 10px;
+}
+
+.alignLeft label {
+	padding-left: 4px;
 }
 
 /* container-operate */
@@ -74,7 +79,7 @@ header {
 }
 
 .container-selectall {
-	padding: 3px 0px 0px 1px;
+	padding: 3px 0px 0px 10px;
 }
 
 .container-selectall button {

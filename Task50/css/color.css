@@ -22,6 +22,10 @@ header {
 	background-color: #fff;
 }
 
+.container-table td {
+	border-bottom: 1px solid #ddd;
+}
+
 .container-table tr:hover {
 	background-color: #fcf0e5;
 }
